@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoViewController: UIViewController, UITableViewDelegate {
+class PhotoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     var photos: NSArray = []
     override func viewDidLoad() {
@@ -23,8 +23,11 @@ class PhotoViewController: UIViewController, UITableViewDelegate {
                 self.tableView.reloadData()
                 NSLog("respondse: \(self.photos)")
             }
+        tableView.dataSource = self
+        tableView.delegate = self
         }
 
+    
     
         // Do any additional setup after loading the view.
     
@@ -32,6 +35,19 @@ class PhotoViewController: UIViewController, UITableViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return photos.count
+
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("photoCell", forIndexPath: indexPath) as! photoCell
+        let photo = photos[indexPath.row].componentsSeparatedByString(", ")
+        cell.userNameLabel.text = photo.valueForKeyPath("user.username") as? String
+        
+        
     }
     
 

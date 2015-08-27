@@ -18,17 +18,13 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="328" id="zFA-kG-gAP">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" rowHeight="328" id="zFA-kG-gAP" customClass="PhotoTableViewCell" customModule="instagramfeed" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="86" width="320" height="328"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zFA-kG-gAP" id="KLf-vE-UUd">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="327"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="VaA-B4-nMW">
-                                                    <rect key="frame" x="24" y="42" width="273" height="273"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HGw-BU-gai">
                                                     <rect key="frame" x="58" y="13" width="239" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -40,8 +36,17 @@
                                                     <rect key="frame" x="24" y="8" width="26" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="VaA-B4-nMW">
+                                                    <rect key="frame" x="24" y="46" width="273" height="273"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatarImageView" destination="XKz-lH-Mjb" id="KZM-aJ-yv3"/>
+                                            <outlet property="picImageView" destination="VaA-B4-nMW" id="uYK-ed-4rn"/>
+                                            <outlet property="userNameLabel" destination="HGw-BU-gai" id="uDg-H8-j9P"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -57,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="766" y="395"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo Detail View Controller-->
         <scene sceneID="2Tm-Dd-vXR">
             <objects>
-                <viewController id="2HN-47-K2q" sceneMemberID="viewController">
+                <viewController id="2HN-47-K2q" customClass="PhotoDetailViewController" customModule="instagramfeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8pZ-M7-e0z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhq-gJ-WFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179" y="393"/>
+            <point key="canvasLocation" x="1186" y="395"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="U7Y-2o-CS1">
