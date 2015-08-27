@@ -13,6 +13,7 @@
 		BCAC45F31B8F2CAF00011454 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAC45F21B8F2CAF00011454 /* Images.xcassets */; };
 		BCAC45F61B8F2CAF00011454 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCAC45F41B8F2CAF00011454 /* LaunchScreen.xib */; };
 		BCAC46021B8F2CAF00011454 /* instagramfeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAC46011B8F2CAF00011454 /* instagramfeedTests.swift */; };
+		D5CBFBDA1B8F379B00F99B40 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBFBD91B8F379B00F99B40 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		BCAC46001B8F2CAF00011454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCAC46011B8F2CAF00011454 /* instagramfeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagramfeedTests.swift; sourceTree = "<group>"; };
 		C13D888E2F8F957AC97C9CC9 /* Pods_instagramfeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagramfeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CBFBD91B8F379B00F99B40 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		E01D763F9D087809D65E16EF /* Pods-instagramfeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramfeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instagramfeed/Pods-instagramfeed.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 		BCAC45E81B8F2CAF00011454 /* instagramfeed */ = {
 			isa = PBXGroup;
 			children = (
+				D5CBFBD61B8F368F00F99B40 /* ViewController */,
 				BCAC45EB1B8F2CAF00011454 /* AppDelegate.swift */,
 				BCAC45EF1B8F2CAF00011454 /* Main.storyboard */,
 				BCAC45F21B8F2CAF00011454 /* Images.xcassets */,
@@ -122,6 +125,14 @@
 				BCAC46001B8F2CAF00011454 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5CBFBD61B8F368F00F99B40 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D5CBFBD91B8F379B00F99B40 /* PhotoViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		F41E05E371F5B53A4A873174 /* Pods */ = {
@@ -285,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCAC45EC1B8F2CAF00011454 /* AppDelegate.swift in Sources */,
+				D5CBFBDA1B8F379B00F99B40 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
