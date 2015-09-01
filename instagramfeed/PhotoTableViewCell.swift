@@ -1,18 +1,17 @@
 //
 //  PhotoTableViewCell.swift
-//  instagramfeed
+//  InstagramFeed
 //
-//  Created by Zet on 8/27/15.
-//  Copyright (c) 2015 platform5. All rights reserved.
+//  Created by P5mini 2 on 9/1/15.
+//  Copyright (c) 2015 Hien VH. All rights reserved.
 //
 
 import UIKit
 
 class PhotoTableViewCell: UITableViewCell {
-    @IBOutlet weak var avatarImageView: UIImageView!
-    @IBOutlet weak var picImageView: UIImageView!
-    @IBOutlet weak var userNameLabel: UILabel!
 
+    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var UserLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

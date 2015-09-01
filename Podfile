@@ -1,14 +1,16 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '6.0'
 
-target 'instagramfeed' do
-platform :ios, '8.0'
-use_frameworks!
+target 'InstagramFeed' do
+    source 'https://github.com/CocoaPods/Specs.git'
+    
+    platform :ios, '7.0'
+    pod 'AFNetworking', '~> 2.5'
+    pod 'JTProgressHUD’
 
-pod 'AFNetworking', '~> 2.0'
 end
 
-target 'instagramfeedTests' do
+target 'InstagramFeedTests' do
 
 end
 

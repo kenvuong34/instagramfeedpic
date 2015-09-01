@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  instagramfeed
+//  InstagramFeed
 //
-//  Created by p5Book2 on 27/08/15.
-//  Copyright (c) 2015 platform5. All rights reserved.
+//  Created by P5mini 2 on 9/1/15.
+//  Copyright (c) 2015 Hien VH. All rights reserved.
 //
 
 import UIKit
